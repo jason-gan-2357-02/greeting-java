@@ -2,10 +2,13 @@ name: Greeting Java
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   greeting-java-job:
-    name: Greeting Java Job
+    name: Build and Deploy Greetings
     runs-on: self-hosted
     
     steps:
