@@ -1,4 +1,4 @@
-name: Build and Deploy to Local Server
+name: Build and Deploy to Prod Server
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   greeting-java-job:
-    name: Build and Deploy to Local Server Job
+    name: Build and Deploy to Prod Server Job
     runs-on: self-hosted
     
     steps:
